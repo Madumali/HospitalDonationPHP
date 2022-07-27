@@ -1,0 +1,1792 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+
+/* .clearfix{overflow: auto;} */
+
+
+/*login*/
+
+
+@media (min-width: 1500px) {
+	.container {
+	  width: 1500px;
+	}
+  }
+
+
+
+body {
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+font-size: 14px;
+
+
+	
+}
+
+.login{
+	width: 400px;
+	margin-top:  100px;
+	padding-top:80px;
+	margin-left: auto;
+	margin-right: auto;
+	/* background-color: burlywood; */
+	
+
+
+}
+.bg{
+	width: 500px;
+	height: 480px;
+	background-color:seashell;
+	margin-top:  100px;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.75;
+}
+
+
+
+fieldset {
+	color: blue;
+  padding : 30px;
+  
+  /* height:165px; */
+   margin-bottom: 10px; 
+   border: 1px solid blue;
+  }
+p.log{
+ text-align: left;
+ color:blue;
+ font-size: 12px;
+ font-weight: bold;
+
+}
+#error{
+	margin-top: 0;
+	padding-top: 0;
+}
+
+/*log in error msg*/
+p.error{
+
+background:red;
+color: white;
+padding: 3px; 
+font-size: 11px;
+
+
+}
+/*logout msg*/
+p.info{ 
+
+background:green;
+color: white;
+padding: 3px;
+font-size: 11px; 
+
+
+}
+
+p.log input{
+	
+	display: block;
+	width: 100%;
+	padding: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 12px;
+	color:blue;
+	
+	text-align: left;
+	margin:5px 0 8px 0; 
+
+
+}
+
+
+
+button#loginbtn {
+
+width: 100%;
+padding: 3px;
+margin-top: 0px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+background: blue;
+color: white;
+
+}
+
+/*other pages*/
+
+/*header bar.emblem/HDMS name/nci logo*/
+table.topbar{
+
+width: 100%;
+
+padding: 5px;
+
+padding-bottom: -0px;
+
+}
+
+
+.left_logo img{
+	margin-left: 20px;
+	height: 80px;
+	float: left;
+	padding-bottom: 7px;
+
+}
+
+
+
+
+
+
+.midlogo img{
+	float: right;
+	/* margin-left:150px; */
+	height: 80px;
+	margin-right: 20px;
+	padding-bottom: 7px;
+}
+
+
+
+.right_logo img {
+	
+height: 80px;
+width: 200px;
+float: right;
+padding-right: 25px;
+padding-bottom: 7px;
+
+
+}
+
+hr {
+	width: 99.9%;
+	height: 20px;
+	background : linear-gradient(#99ccff,#3385ff, #1a75ff,#99ccff);
+border-top: 1px solid lightblue;
+border-bottom: 1px solid lightblue;
+margin-top: -2px;
+
+}
+
+
+
+
+
+/*after logged in displaying screen no*/
+.screenno {
+	
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: blue;
+	font-size:12px;
+}
+.appname {
+	font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+	font-size: 20px;
+	color: black;
+	margin-top: 5px;
+	float: left;
+	/*margin-left: 8px;*/
+	padding: 2px;
+	height: 5px;
+
+}
+
+/*displaying log in as Admin in each page*/
+ .loggedin {
+ margin-top: 10px;
+float: right;
+margin-right: 10px;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+color: blue;
+font-size: 12px;
+
+ }
+
+/*button bar of menu2*/
+
+.menubar {
+
+margin-top: 100px;
+
+}
+
+body.wrapper2{
+	background: url('../img/suwapeksha.jpg') no-repeat center center fixed ;
+	background-size: cover;
+	position: relative;
+
+}
+/* body.wrapper2::before{
+	content: "";
+	background-image: url('../img/razavi.jpg');
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	/* background-color: rgba(0, 0, 0, 0.02); */
+	/* background-position: top center; */
+	/* opacity: 0.0; */
+/* }  */ 
+
+.menubar table  {
+	width: 650px;
+	height:130px;
+	border-radius:10px;
+	margin:0 auto;
+	border: 2px solid rgb(49, 15, 240);
+
+
+}
+.menubar th {
+	height: 35px;
+	border-bottom: 2px solid rgb(49, 15, 240);
+	color: rgb(255, 0, 0);
+	text-align: center;
+	
+
+}
+
+.menubar button  {
+	
+	padding: 5px 10px;
+	background: linear-gradient(#4db8ff,#0099ff,#4db8ff);
+	width: 155px;
+	border-radius: 5px;
+
+}
+.menubar button:first-child{
+	margin-left:10px; 
+
+
+}
+
+
+
+.menubar button a {
+	text-decoration:none; 
+	color: white;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	
+	
+}
+a.other{
+	padding: 5px 10px;
+	background-color:lawngreen;
+	width: 150px;
+	text-decoration: none;
+	
+	margin-left: 70px;
+	text-align: center;
+}
+/* button.other a{
+	text-decoration:none; 
+	color: white;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		
+}
+button.other a:hover{
+	color: #dc3545;
+} */
+.menubar button a:hover {
+
+color: #dc3545;
+
+}
+table.menu5{
+	width: 810px;
+}
+/*button bar table in menu3*/
+table.menu3 {
+width: 1150px;
+margin:0 auto;
+
+
+}
+
+/*button bar table in menu1*/
+table.menu1 {
+width: 500px;
+margin:0 auto;
+
+}
+/*menu1 selection*/
+table.menu1 button{
+padding: 5px 5px;
+background: linear-gradient(#4db8ff,#0099ff,#4db8ff);
+border-radius: 5px;
+margin-right: 5px;
+margin-top: 6px;
+width: 120px;
+color: white;
+
+
+
+}
+.menu1 button:first-child{
+	margin-left: 60px;
+}
+
+/*menu4 buttons*/
+table.menu4 {
+width: 500px;
+margin:0 auto;
+
+}
+table.menu4 button{
+	padding: 5px 5px;
+background: linear-gradient(#4db8ff,#0099ff,#4db8ff);
+border-radius: 5px;
+margin-right: 5px;
+margin-top: 6px;
+width: 90px;
+color: white;
+
+}
+.menu4 button:first-child{
+	margin-left: 120px;
+}
+
+/*footer*/
+
+
+table.wrapper {
+	width: 100%;
+	
+	margin-top: 112px;
+
+}
+table.wrap2 {
+
+	width: 100%;
+	margin-top: 48px;
+}
+
+/*footer left image*/
+.bgimg {
+
+	float: left;
+}
+
+.bgimg img {
+
+margin-top: 0px;
+padding-top: 0;
+height: 280px;
+width: 350px;
+opacity: 10%;
+/*margin-left: 20px;*/
+background: white;
+}
+
+.end{
+
+	margin-top:0;
+	align-content: center;
+	
+	
+	
+}
+
+.end p {
+
+padding-top: 0;
+margin-top: 0;
+text-align: center;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+color: #33adff;
+font-size: 12px;
+}
+
+.end img {
+	margin-left: 129px;
+	width:100px;
+	height: 50px;
+
+
+}
+/*footer right image*/
+.bgimgr{
+
+	/* position: relative;
+	display: flex; */
+	justify-content: center;
+	margin-top: 200px;
+}
+
+.bgimgr img{
+	text-align: center;
+	/* position: absolute; */
+	bottom: 0;
+	height: 100px;
+	width: 100px;
+}
+#footer{
+	position: fixed;
+	padding: 10px 10px 0 10px;
+	bottom:0;
+	height:50px;
+	background-color: #6cf;
+	width: 100%;
+	text-align: center;
+	opacity: 20;
+}
+
+#footer p#author{
+	text-align: right;
+	margin-top:-35px;
+	color: blue;
+font-family: Verdana, Geneva, sans-serif;
+font-size: 7;
+}
+
+p.last {
+	margin-top: 0;
+}
+/*display author*/
+
+
+/*institute select*/
+.insselect{
+	margin-top: 50px;
+
+
+}
+
+.insselect table{
+height: 150px;
+border: 1px solid lightblue;
+width: 500px;
+margin: 0 auto;
+border-radius: 10px;
+
+}
+.insselect th {
+height: 35px;
+border-bottom: 1px solid lightblue;
+
+
+}
+.insselect button {
+
+padding: 5px 5px;
+background: linear-gradient(#4db8ff,#0099ff,#4db8ff);
+border-radius: 5px;
+margin-right: 5px;
+margin-top: 6px;
+width: 90px;
+color: white;
+
+}
+ button:first_child{
+	margin-left: 30px;
+}
+
+p.ins select {
+
+background: #eee;
+width: 300px;
+
+}
+p.btn {
+
+	padding-left: 100px;
+}
+/*display institute name top of the login*/
+p.ins {
+
+font-size: 13px;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+color: #33adff;
+padding-left: 20px;
+
+}
+/*p.ins input {
+
+	/*border-style: none;*/
+/*	border-radius: 10px;
+	background: blue;
+	margin-left: 4px;
+	padding: 3px 5px 2px 5px;
+	font-size: 12px;
+	color: white;
+}*/
+
+/*user management system*/
+
+.adduser table {
+
+width: 750px;
+border: 1px solid lightblue;
+border-radius: 10px;
+margin: 40px auto 0 auto;
+height: 450px;
+
+}
+.adduser table th {
+height: 35px;
+border-bottom: 1px solid lightblue;
+
+}
+select.D1 {
+
+	
+	width: 42%;
+	margin-left: 5px;
+	padding: 4px 0;
+	margin-bottom: 0px;
+	border-color: lightblue;
+
+}
+select.U1 {
+	width: 42%;
+	margin-left: 5px;
+	padding: 4px 0;
+	border-color: lightblue;
+	
+	}
+select#sel_depart {
+	width: 40%;
+	margin-left: 5px;
+	padding: 4px 0;
+	border-color: lightblue;
+	
+	}
+select#sel_depart1 {
+	width: 25%;
+	margin-left: 5px;
+	padding: 4px 0;
+	border-color: lightblue;
+	
+	}
+select#sel_item0{
+	width: 40%;
+	margin-left: 0px;
+	padding: 4px 0;
+	border-color: lightblue;
+	
+	}
+	select#sel_item1 {
+	width: 40%;
+	margin-left: 5px;
+	padding: 4px 0;
+	border-color: lightblue;
+	
+	}
+	select#sel_item2 {
+	width: 40%;
+	margin-left: 5px;
+	padding: 4px 0;
+	border-color: lightblue;
+	
+	}
+	select#sel_item3 {
+	width: 40%;
+	margin-left: 5px;
+	padding: 4px 0;
+	border-color: lightblue;
+	
+	}
+	select#sel_item4 {
+	width: 40%;
+	margin-left: 5px;
+	padding: 4px 0;
+	border-color: lightblue;
+	
+	}select#sel_item5 {
+	width: 40%;
+	margin-left: 5px;
+	padding: 4px 0;
+	border-color: lightblue;
+	
+	}
+	
+	.items1{
+		float: right;
+	}
+#qty0{
+	width: 10%;
+	padding: 2px;
+	color: black;
+}#qty2{
+	width: 10%;
+	padding: 2px;
+	color: black;
+}#qty3{
+	width: 10%;
+	padding: 2px;
+	color: black;
+}#qty4{
+	width: 10%;
+	padding: 2px;
+	color: black;
+}#qty1{
+	width: 10%;
+	padding: 2px;
+	color: black;
+}
+
+
+
+.userform label {
+	float:left;
+	width: 30%;
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding-top: 0;
+	margin-left: 5px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	color: #0099ff;
+	
+	
+}
+.userform input {
+	width: 40%;
+	margin: 5px;
+	border-radius: 1px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: 1px solid;
+	border-color: lightblue;
+
+}
+.userform p {
+color:blue;
+font-size: 13px;
+
+
+}
+
+.userform button {
+	width: 110px;
+	color: white; 
+	background: linear-gradient(#4db8ff,#0099ff,#4db8ff);
+	padding: 5px 5px;
+	margin-left: 10px;
+	
+}
+ button a {
+
+text-decoration: none;
+color: white;
+}
+
+.errmsg {
+font-family: Verdana, Geneva, sans-serif;
+font-size: 12px;
+background: #eee;
+color: blue;
+margin-left: 5px;
+
+}
+
+p.savemsg {
+
+	background: lightblue;
+	color: white;
+	padding: 5px;
+}
+/*view user*/
+
+.uview table{
+border: 1px solid lightblue;
+margin: 40px auto 0 auto;
+width: 550px;
+border-radius: 5px;
+height: 150px;
+
+
+}
+table.userview th{
+	height: 35px;
+	border-bottom: 1px solid lightblue;
+}
+p.userview{
+
+	font-size: 13px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #33adff;
+	padding-left: 20px;
+
+}
+p.userview input {
+
+	border-style: none;
+	border-radius: 5px;
+	
+	margin-left: 6px;
+	padding: 3px 5px 2px 5px;
+	font-size: 12px;
+
+
+}
+p.userview select{
+	background: #eee;
+	width: 350px;
+}
+p.userview button{
+padding: 5px 5px;
+background: linear-gradient(#4db8ff,#0099ff,#4db8ff);
+border-radius: 5px;
+margin-right: 5px;
+margin-top: 6px;
+width: 90px;
+color: white;
+}
+.userview button:first-child{
+	margin-left: 90px;
+}
+
+#donors{
+color: black;
+background: #eee;
+width: 250px;
+border: 1px solid blue;
+
+}
+#donorc{
+color: black;
+background: #eee;
+width: 250px;
+border: 1px solid blue;
+
+}
+#user{
+color: black;
+background: #eee;
+width: 250px;
+border: 1px solid blue;
+
+}
+#ins{
+color: black;
+background: #eee;
+width: 250px;
+border: 1px solid blue;
+
+}
+.btnset button {
+	margin-left: 99px;
+	margin-top: 10px;
+	
+
+	padding: 5px 10px;
+	background: linear-gradient(#4db8ff,#0099ff,#4db8ff);
+	width: 155px;
+	border-radius: 5px;
+	
+}
+/*institute management*/
+.addinstitute table{
+	width: 750px;
+	border: 1px solid lightblue;
+	border-radius: 10px;
+	margin: 40px auto 0 auto;
+	height: 300px;
+}
+.addinstitute table th{
+	height: 35px;
+	border-bottom: 1px solid lightblue;
+}
+
+.institute_form label {
+	float:left;
+	width: 30%;
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding-top: 0;
+	margin-left: 5px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	color: #0099ff;
+	
+}
+.institute_form input {
+	width: 40%;
+	margin: 5px;
+	border-radius: 1px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: 1px solid;
+	border-color: lightblue;
+
+}
+.institute_form p {
+color:blue;
+font-size: 13px;
+
+
+}
+
+.institute_form button {
+	width: 110px;
+	color: white; 
+	background: linear-gradient(#4db8ff,#0099ff,#4db8ff);
+	padding: 5px 5px;
+	margin-left: 10px;
+	
+}
+ button a {
+
+text-decoration: none;
+color: white;
+}
+
+p.insbtn{
+	padding-left: 60px;
+}
+
+
+
+
+/*donor system*/
+.select{
+	font-size: 13px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #33adff;
+    padding-left: 20px;
+}
+.select select {
+	
+	width: 300px;
+	background: #eee;
+	
+	font-size: 13px;
+	font-family: Verdana, Geneva, sans-serif;
+
+
+
+}
+.adddonor table#person {
+
+width: 750px;
+border: 1px solid lightblue;
+border-radius: 10px;
+margin: 40px auto 0 auto;
+height: 450px;
+
+}
+.adddonor table th {
+height: 35px;
+border-bottom: 1px solid lightblue;
+
+}
+.personl label {
+	float:left;
+	width: 30%;
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding-top: 0;
+	margin-left: 5px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	color: #0099ff;
+	/*display: inline;*/
+	
+	/*margin: 5px;*/
+	
+}
+.personl input {
+	width: 40%;
+	margin: 5px;
+	border-radius: 1px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: 1px solid;
+	border-color: lightblue;
+
+}
+.donorform button {
+	width: 110px;
+	color: white; 
+	background: linear-gradient(#4db8ff,#0099ff,#4db8ff);
+	padding: 5px 5px;
+	margin-left: 10px;
+	
+}
+
+
+#active_sub fieldset{
+	width: 500px;
+	margin: 0 auto;
+}
+#active_sub label{
+	margin-right: 40px;
+
+}
+/*user list*/
+main{
+	width: 1000px;
+	margin: 70px auto;
+
+}
+p.box{
+	text-align: center;
+
+}
+p.box input{
+	margin-left: 10px;
+	padding: 5px;
+
+}
+table.masterlist{
+	width: 90%;
+	
+	margin: 0 auto;
+}
+table.masterlist th{
+	background: #aaa;
+	text-align: left;
+}
+table.masterlist th,table.masterlist td{
+	padding: 5px;
+	border-bottom: 1px solid lightblue;
+	border-collapse: collapse;
+}
+/* td#give{
+	border-bottom: none;
+} */
+/*user buttonset*/
+p.user{
+	padding-left: 120px; 
+}
+/*donation buttonset*/
+/* p.don{
+	/*padding-left: 60px; */
+
+/*user modify buttonset*/
+p.btn1{
+	padding-left: 60px; 
+}
+/*donor buttonset*/
+p.donor{
+	padding-left: 60px; 
+}
+/*donation-item box*/
+#items fieldset{
+	width: 450px;
+	margin: 0 auto 10px auto;
+	height: 400px;
+}
+
+
+
+p.item label{
+	width: 25%;
+	
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding-top: 0;
+	margin-left: 5px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	color: #0099ff;
+
+}
+p.item input{
+	width: 25%;
+	margin: 5px;
+	border-radius: 1px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding: 5px 0 ;
+	border: 1px solid;
+	border-color: lightblue;
+}
+/*donation management*/
+.adddonation table {
+
+/*width: 100%;*/
+border: 1px solid lightblue;
+border-radius: 10px;
+margin: 40px auto 0 auto;
+
+
+}
+.adddonation table th {
+height: 35px;
+border-bottom: 1px solid lightblue;
+
+}
+.donationsform label {
+	float:left;
+	width: 30%;
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding-top: 0;
+	margin-left: 5px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	color: #0099ff;
+	
+	
+}
+.donationsform input {
+	width: 40%;
+	margin: 5px;
+	border-radius: 1px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: 1px solid;
+	border-color: lightblue;
+
+}
+.donationsform p {
+color:blue;
+font-size: 13px;
+
+
+}
+
+.donationsform button {
+	width: 110px;
+	color: white; 
+	background: linear-gradient(#4db8ff,#0099ff,#4db8ff);
+	padding: 5px 5px;
+	margin-left: 10px;
+	
+}
+button.add{
+	width: 50px;
+	padding: 1px;
+	background:  green;
+
+}
+button.btn_remove{
+	width: 30px;
+	padding: 1px;
+	background:  red;
+	margin-top: 15px;
+	margin-left: 0;
+	padding-left: 0;
+	margin-right: 15px;
+
+}button.btn_remove1{
+	width: 30px;
+	padding: 1px;
+	background:  red;
+	margin-top: 15px;
+	margin-left: 0;
+	padding-left: 0;
+	margin-right: 15px;
+
+}button.btn_remove2{
+	width: 30px;
+	padding: 1px;
+	background:  red;
+	margin-top: 15px;
+	margin-left: 0;
+	padding-left: 0;
+	margin-right: 15px;
+
+}button.btn_remove3{
+	width: 30px;
+	padding: 1px;
+	background:  red;
+	margin-top: 15px;
+	margin-left: 0;
+	padding-left: 0;
+	margin-right: 15px;
+
+}button.btn_remove4{
+	width: 30px;
+	padding: 1px;
+	background:  red;
+	margin-top: 15px;
+	margin-left: 0;
+	padding-left: 0;
+	margin-right: 15px;
+
+}button.btn_remove5{
+	width: 30px;
+	padding: 1px;
+	background:  red;
+	margin-top: 15px;
+	margin-left: 0;
+	padding-left: 0;
+	margin-right: 15px;
+
+}button.btn_remove6{
+	width: 30px;
+	padding: 1px;
+	background:  red;
+	margin-top: 15px;
+	margin-left: 0;
+	padding-left: 0;
+	margin-right: 15px;
+
+}button.btn_remove7{
+	width: 30px;
+	padding: 1px;
+	background:  red;
+	margin-top: 15px;
+	margin-left: 0;
+	padding-left: 0;
+	margin-right: 15px;
+
+}button.btn_remove8{
+	width: 30px;
+	padding: 1px;
+	background:  red;
+	margin-top: 15px;
+	margin-left: 0;
+	padding-left: 0;
+	margin-right: 15px;
+
+}button.btn_remove9{
+	width: 30px;
+	padding: 1px;
+	background:  red;
+	margin-top: 15px;
+	margin-left: 0;
+	padding-left: 0;
+	margin-right: 15px;
+
+}
+
+.field1{
+	display: none;
+}
+
+.field table.dynamic_field2{
+	width:40%;
+	margin-top: 0;
+	margin-left: 250px;
+	margin-bottom: 10px;
+
+}.field1 table.dynamic_field2{
+	width:40%;
+	margin-top: 0;
+	margin-left: 250px;
+	margin-bottom: 10px;
+
+}
+.field table.dynamic_field2 th{
+	font-size: 11px;
+	height: 0;
+	border: 0;
+	text-align: center;
+	margin-bottom: 10px;
+
+}
+.field table.dynamic_field2 td{
+	font-size: 11px;
+	
+
+}
+.field table.dynamic_field2 input{
+	width: 100px;
+	margin: 0;
+	margin-right: 5px;
+
+}
+.dynamic_field2 input:first-child{
+	
+	margin-left: 5px;
+
+}
+.userview button.search{
+	width: 50px;
+	padding: 1px;
+	background:  green;
+
+}
+button.search{
+	width: 50px;
+	padding: 1px;
+	background:  green;
+
+}
+/*new donor file*/
+.wrap {
+	width:95%;
+	/* margin: 50PX 0px 0 10PX; */
+	margin: 20px auto 0 auto;
+	/*background-color:#F2F3F4;*/
+}
+
+.donorinfo{
+	
+	float: left;
+	width: auto;	
+} 
+.iteminfo{
+	
+	margin: 50px auto 0 auto;
+	width:700px;	
+} 
+.userinfo{
+	
+	margin: 0 auto;
+	width:700px;
+	
+}
+.userinfo2{
+	
+	margin: 0 auto;
+	width:800px;	
+}  
+
+.reserveinfo{
+	float:right;
+
+}
+input#availableqty{
+	width: 50px;
+}
+input#releaseqty{
+	width: 60px;
+}
+input#whom{
+	width: 200px;
+}
+select.selecting{
+	width: 200px;
+}
+.donorinfo fieldset{
+	width: auto;
+	margin-left: 100px;
+	/*margin-right: 0;*/
+	border-radius: 20px;
+	background-color:#E5E7E9;
+	height: auto;	
+}
+.iteminfo fieldset{
+	width: auto;
+	margin-left: 100px;
+	/*margin-right: 0;*/
+	border-radius: 20px;
+	background-color:#E5E7E9;
+	height: auto;	
+}
+.userinfo fieldset{
+	width: auto;
+	margin-left: 100px;
+	/*margin-right: 0;*/
+	border-radius: 20px;
+	background-color:#E5E7E9;
+	height: auto;	
+}
+.userinfo2 fieldset{
+	width: auto;
+	margin-left: 100px;
+	/*margin-right: 0;*/
+	border-radius: 20px;
+	background-color:#E5E7E9;
+	height: auto;	
+}
+/*fieldset legend*/
+.dperson legend{
+	font-size: 18px
+}
+
+.labelfield{
+	float: left;
+	/*width: 40%;*/
+}
+.labelfield  p{
+
+	padding: 5px;
+	margin-bottom: 18px;
+	margin-right: 20px;
+	color: #3300ff;
+}
+.labelfield label{
+	float: left;
+}
+#ff.inputfield{
+	float: left;
+}
+.inputfield{
+	float: right;
+	margin-left: 0;
+	/*width: 60%;*/
+}
+input.inputfield.title{
+	width: 0px;
+	padding: 5px;
+}
+.inputfield input{
+	width: 300px;
+	padding: 5px;
+	border: 1px solid black;
+}
+.inputfield2{
+	float: right;
+	/*width: 60%;*/
+}
+.inputfield2 input{
+	width: 200px;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+
+.reserveinfo fieldset{
+	/* max-width: 680px; */
+	width: 700px;
+	margin-right: 0px;
+	border-radius: 30px;
+	background-color:#E5E7E9;
+	height: auto
+	/*margin-left: 0;*/
+	
+}
+.reserve legend{
+	font-size: 18px;
+}
+.sub  {
+	width: 130px;
+	padding: 5px;
+	margin-right: 10px;
+	background-color: #66ccff;
+}
+
+/*checkbox in donor*/
+p.check{
+	text-align: left;
+	
+	font-size: 16px;
+	margin-bottom: 5px;
+	margin-left: 130px; 
+}
+.check input{
+	margin-right: 5px;
+}
+.check label{
+	background-color: #66ccff;
+}
+.donorTeamInfo{
+	float: left;
+	width: auto;
+}
+.donorTeamInfo fieldset{
+	width: 600px;
+	border-radius: 30px;
+	background-color:#E5E7E9;
+	height: auto;
+}
+.team legend{
+	font-size: 18px;
+}
+
+.first input{
+	padding: 3px;
+	border-color: lightblue;
+	/* width: 150px; */
+	margin-left: 10px;
+	margin-right: 5px;
+
+}
+input.sizeinput{
+
+width:100px;
+margin: 0;
+}
+
+#addM {
+	font-size: 20px;
+}
+
+input.qty{
+	width: 50px;
+}
+button.x{
+	margin-left: 88px;
+}
+table.teamT{
+	/*table-layout: fixed;*/
+	width: 680px;
+	border:1px solid lightblue;
+	height: auto;
+}
+table.teamT td{
+	border-bottom:1px solid lightblue;
+	background-color: white;
+	color: lightblue;
+
+}
+table.teamT td:last-child{
+	width: 1px;
+	background-color:#E5E7E9;
+	border-bottom: 0;
+}
+table.teamT th{
+	border-bottom:1px solid lightblue;
+	background: #aaa;
+	text-align: left;
+
+}
+
+
+
+button #edit {
+	font-size: 15px;
+}
+button #delete {
+	font-size: 15px;
+}
+
+select#donName{
+	
+	padding: 5px;
+	padding-top: 0;
+	border-color: lightblue;
+	width: 250px;
+	/*margin-left: 15px;*/
+	margin-right: 7px;
+}
+select#dpname{
+	padding: 5px;
+	padding-top: 0;
+	border-color: lightblue;
+	width: 250px;
+	/*margin-left: 15px;*/
+	margin-left: 10px;
+}
+
+.selectBox.ItemType{
+	padding: 5px;
+	border-color: lightblue;
+	width: 250px;
+	margin-left: 48px;
+	margin-right: 7px;
+}
+/*.ItemType option::before{
+	content: "\2610";
+	width: 1.3em;
+	text-align: center;
+	display: inline-block;
+
+}
+
+.ItemType option:checked::before{
+	content: "\2611";
+}*/
+
+.reservation input{
+	padding: 5px;
+	border-color: lightblue;
+	width: 120px;
+	/*margin-left: 23px;*/
+	margin-right: 7px;
+}
+.reservation input.qty{
+	width: 50px;
+	margin-left: 10px;	
+}
+
+.reservation button.sub{
+	margin-left: 110px;
+}
+
+.teamDetails table.teamTDm{
+	table-layout: fixed;
+	width: 650px;
+	border:1px solid lightblue;
+	height: auto;
+
+}
+
+.donorDetailfirst table.teamTDm{
+	table-layout: fixed;
+	width: 620px;
+	border:1px solid lightblue;
+	height: auto;
+}
+table.teamTDm input{
+	width: 90px;
+}
+table.teamTDm td{
+	/*border-bottom:1px solid lightblue; */
+	border-right: 1px solid black;
+	color: #0099ff;	
+}
+table.teamTDm td:last-child{
+	border-right: none;
+	border-bottom: none;
+	width: 30px;
+}
+
+table.teamTDm th{
+	border-bottom:1px solid lightblue;
+	background: #aaa;
+	text-align: left;
+
+}
+.teamTDm td.img{
+width: 55px;
+}
+
+.Items {
+float: left;
+width: auto;
+}
+table.ItemT th{
+	background: #aaa;
+	text-align: left;
+}
+
+.Items table.ItemT{
+	width: auto;
+	border:1px solid lightblue;
+	height: auto;
+	/*margin-left: 110px;*/
+}
+ #reservation input.sty{
+
+	width: 100px;
+}
+#reservation input.styq{
+
+	width: 50px;
+}
+/*CHECKBOXES INSIDE SELECT LIST*/
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  /*width: auto;*/
+  font-weight: bold;
+  padding: 5px;
+	border-color: lightblue;
+	width: 145px;
+	margin-left:0px;
+	margin-right: 7px;
+	margin-top: 0;
+}
+
+.overSelect {
+margin-left: 90px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+  width: 145px;
+  margin-left: 70px;
+}
+
+#checkboxes label {
+  display: block;
+
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+input.SelectItem{
+	width: 10px;
+}
+
+
+/*ITEM TYPE ADDING*/
+
+.itemTypeWrapper{
+	float: left;
+	
+	
+}
+
+.modal-title{
+	padding-bottom:5px;
+	
+}
+
+.close{
+	float: right;
+	
+}
+
+.itemDisplay{
+	float: right;
+	 border: 1px #dadada solid;
+  width: auto;
+  margin-left: 108px;
+}
+
+
+
+
+.Items table.ItemTw{
+	width: auto;
+	border:1px solid lightblue;
+	height: auto;
+	background-color: whitesmoke;
+	/*margin-left: 52px;*/
+}
+
+table.Itemlist{
+	table-layout: auto;
+	width: 620px;
+	border:1px solid lightblue;
+	height: auto;
+}
+table.Itemlist td{
+	/*border-bottom:1px solid lightblue; */
+	border-right: 1px solid black;
+	color: #0099ff;	
+	border-bottom: 1px solid lightblue;
+}
+table.Itemlist td:last-child{
+	width: 130px;
+	border-right: none;
+	border-bottom: none;
+	float: right;
+	
+}
+
+table.Itemlist th{
+	border-bottom:1px solid lightblue;
+	background-color: #aaa;
+	text-align: left;
+
+}
+
+
+.res{
+	float: right;
+}
+.don{
+	float: left;
+}
+.itemTinput{
+	height: 20px;
+}
+input.invalid{
+	border: 2px solid red;
+	
+}
+input.valid{
+	border: 2px solid green;
+}
+
+.error{ color:red; font-size: 10px; } 
+
+input#search_id{
+	margin-left: 10px;
+	padding: 5px;
+}
+input#search_itemid{
+	margin-left: 10px;
+	padding: 5px;
+}
+p#serch{
+	float: right;
+	margin-right: 20px;
+	background-color: chartreuse;
+}
+p#leftserch{
+	margin-top: 20px;
+	float: none;
+	margin-left: 30px;
+}
+#leftserch input{
+	padding: 5px;
+}
+p#midserch{
+	margin-top: 20px;
+	float: left;
+	margin-left: 30px;
+}
+#midserch select{
+	padding: 5px;
+}
+a#prints{
+	float: right;
+}
+/* #exampleModaldnw1{
+	width: 700px;
+} */
+
+span.page_link{
+	cursor: pointer;
+	position: relative;
+	display: block;
+	color: #0d6efd;
+	text-decoration: none;
+	background-color: #fff;
+	border: 1px solid #dee2e6;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: none;
+	padding: 0.375rem 0.75rem;
+}
+
+ 
+  span.page-link:hover {
+	z-index: 2;
+	color: #0a58ca;
+	background-color: #e9ecef;
+	border-color: #dee2e6;
+  }
+  span.page-link:focus {
+	z-index: 3;
+	color: #0a58ca;
+	background-color: #e9ecef;
+	outline: 0;
+	box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  }
+  
+  .page-item:not(:first-child) .page-link {
+	margin-left: -1px;
+  }
+  .page-item.active .page-link {
+	z-index: 3;
+	color: #fff;
+	background-color: #0d6efd;
+	border-color: #0d6efd;
+  }
+  .page-item.disabled .page-link {
+	color: #6c757d;
+	pointer-events: none;
+	background-color: #fff;
+	border-color: #dee2e6;
+  }
+  
+  
+  
+  .page-item:first-child .page-link {
+	border-top-left-radius: 0.25rem;
+	border-bottom-left-radius: 0.25rem;
+  }
+  .page-item:last-child .page-link {
+	border-top-right-radius: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
+  }
+.pagination{
+	display: flex;
+	padding-left: 0;
+	list-style: none;
+	justify-content: center;
+
+}
+/* li.page_item{
+	float: left;
+	list-style: outside none none;
+	padding-left: 5px;
+} */
+/* container */
